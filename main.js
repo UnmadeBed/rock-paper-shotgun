@@ -64,4 +64,11 @@ function game() {
 			console.log("It's a tie", playerScore, computerScore);
 		}
 	}
+	if (playerScore > computerScore) {
+		console.log('Congrats! You won this game!');
+	} else if (computerScore > playerScore) {
+		console.log('Sorry, you lost this round!');
+	} else if (playerScore == computerScore) {
+		console.log("It's a draw!");
+	}
 }
